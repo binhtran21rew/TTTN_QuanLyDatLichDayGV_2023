@@ -1,9 +1,14 @@
-<!-- Nav Item - Dashboard -->
-<li class="nav-item">
-    <a class="nav-link" >
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Thời Khoá Biểu</span></a>
-</li>
+<script src= "https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<!-- Contact Javascript File -->
+<script src="{{asset('js/image.js')}}"></script>
+<script src="{{asset('js/sb-admin-2.js')}}"></script>
+<script src="{{asset('js/sb-admin-2.min.js')}}"></script>
+<script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.css')}}"></script>
+<script src="{{asset('vendor/fontawesome-free/css/all.min.css')}}"></script>
+<script src="{{asset('css/sb-admin-2.min.css')}}"></script>
+<!-- Template Javascript -->
+
 
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
@@ -37,16 +42,7 @@
 
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-        aria-controls="collapseTwo">
+    <a class="nav-link" href="">
         <i class="fas fa-fw fa-table"></i>
-        <span>Xem Thời khoá biểu</span>
-    </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Xem Thời khoá biểu</a>
-    
-        </div>
-    </div>
+        <span>Xem thời khoá biểu</span></a>
 </li>
-
