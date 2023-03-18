@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CalendarController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//fontend
+Route::get('/', [CalendarController::class, 'index']);
 
-Route::get('calendar', [CalendarController::class, 'index']);
+
+
+//backend
+Route::get('/admin',[AdminController::class,'index']);
+
 
