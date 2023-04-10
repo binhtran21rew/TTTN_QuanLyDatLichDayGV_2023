@@ -3,7 +3,7 @@ namespace App\Services;
 
 use Carbon\Carbon as CarbonCarbon;
 use Illuminate\Support\Carbon;
-
+ 
 class TimeService {
     public function generateTimeRange($fromsang, $tosang, $fromchieu, $tochieu) {
         $timesang = Carbon::parse($fromsang);
