@@ -9,7 +9,6 @@ class giaoviens extends Model
 {
     use HasFactory;
     protected $table= 'giaoviens';
-    protected $fillable = ['maGV', 'tenGV', 'maMH'];
+    protected $fillable = ['maGV', 'tenGV'];
     protected $primaryKey = 'maGV';
-    
 }

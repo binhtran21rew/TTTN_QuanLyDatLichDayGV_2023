@@ -1,0 +1,72 @@
+th{
+    border: 1px solid black;
+    text-align: center !important;
+    background-color: azure;
+    color: rgb(74, 73, 73);
+    font-size: 1.2rem;
+}
+td{
+    border: 1px solid black;
+    min-width: 120px;
+    text-align:  center;
+}
+.customRoom:hover{
+    background-color: aquamarine;
+}
+.customTime{
+    background-color: rgb(185, 231, 231);
+    color: rgb(125, 125, 125);
+    font-size: 1.2rem;
+}
+.customCalendar{
+    max-width: 150px;
+    color: black;
+    background-color: rgb(208, 211, 214);
+}
+.customRoom{
+    border: 1px solid rgb(108, 222, 230);
+    width: 100px;
+    margin-bottom: 10px;
+}
+.customFooter,
+.custom_link_right{
+    color: black;
+    display: flex;
+    float: right;
+    margin-right: 25px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(95, 252, 252);
+}
+.customFooter:hover,
+.custom_link_right:hover{
+    list-style: none;
+    text-decoration: none;
+    color: brown;
+    background-color: rgb(78, 243, 243);
+}
+
+
+.showBooking{
+    display: none;
+}
+.showRoom:hover .showBooking{
+    display: block;
+}
+
+.customFooter{
+    float: left;
+    color: rgb(45, 45, 44);
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.customInfoRoom{
+    text-decoration: none;
+    color: black;
+}
+.customInfoRoom:hover{
+    text-decoration: none;
+    color: rgb(47, 239, 175);
+}

@@ -1,0 +1,42 @@
+/* html, body{
+    width: 100%;
+	position: absolute;
+	z-index: 3;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+  	justify-content: center;
+} */
+.box{
+    text-align: center;
+    background: #cef0f9;
+    box-shadow: 0px 2px 10px 0px #646363;
+}
+.box h1{
+    color: #74cef4;
+}
+.box input[type="text"], .customSelect{
+    background: none;
+    outline: none;
+    border-radius: 40px;
+    border: solid 2px #002cff;
+    transition: 1s;
+    text-align: center;
+}
+
+.box input[type="submit"]{
+    background: none;
+    outline: none;
+    border: solid 2px #002cff;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 40px;
+    width: 160px;
+    transition: 1s;
+
+}
+.box input[type="submit"]:hover{
+    background: #002cff;
+    transition: 1s;
+    color: wheat;
+}

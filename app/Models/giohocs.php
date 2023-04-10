@@ -9,7 +9,7 @@ class giohocs extends Model
 {
     use HasFactory;
     protected $table = 'giohocs';
-    protected $fillalbe = ['maGH', 'time_begin', 'time_end'];
+    protected $fillable = ['maGH', 'time_begin', 'time_end'];
 
 
     protected $primaryKey = 'maGH';

@@ -9,7 +9,7 @@ class monhocs extends Model
 {
     use HasFactory;
     protected $table = 'monhocs';
-    protected $fillable = ['maMH', 'tenMH', 'maGV', 'ngayhoc', 'time_hoc'];
+    protected $fillable = ['maMH', 'tenMH', 'time_hoc', 'time_end'];
 
     const WEEK_DAYS = [
             '2' => 'Monday',

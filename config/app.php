@@ -213,8 +213,10 @@ return [
     ])->toArray(),
 
     'calendar' => [
-        'start_time' => '07:00',
-        'end_time' => '18:00'
+        'start_time_sang' => '07:00',
+        'end_time_sang' => '12:05',
+        'start_time_chieu' => '12:35',
+        'end_time_chieu' => '17:40'
     ],
 
 ];

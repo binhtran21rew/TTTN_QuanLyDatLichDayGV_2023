@@ -14,13 +14,14 @@ return new class extends Migration
         Schema::create('monhocs', function (Blueprint $table) {
             $table->string('maMH');
             $table->string('tenMH');
-            $table->string('maGH');
-            $table->integer('ngayhoc');
             $table->date('time_hoc');
+            $table->date('time_end');
+
             $table->timestamps();
 
             $table->primary('maMH');
-            $table->foreign('maGH')->references('maGH')->on('giohocs');
+
+
         });
     }
 

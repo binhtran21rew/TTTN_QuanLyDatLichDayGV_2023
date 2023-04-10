@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('giaoviens', function (Blueprint $table) {
             $table->string('maGV');
             $table->string('tenGV');
-            $table->string('maMH');
+            // $table->string('maMH');
             $table->timestamps();
 
             $table->primary('maGV');
-            $table->foreign('maMH')->references('maMH')->on('monhocs');
+            // $table->foreign('maMH')->references('maMH')->on('monhocs');
         });
     }
 

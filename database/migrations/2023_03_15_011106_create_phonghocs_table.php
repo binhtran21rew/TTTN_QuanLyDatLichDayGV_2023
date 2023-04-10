@@ -17,10 +17,13 @@ return new class extends Migration
             $table->string('maMH');
             $table->string('maGV');
             $table->string('maLop');
+            $table->string('maGH');
+            $table->integer('ngayhoc');
             $table->integer('tinhtrang');
             $table->timestamps();
 
 
+            $table->foreign('maGH')->references('maGH')->on('giohocs');
             $table->foreign('maMH')->references('maMH')->on('monhocs');
             $table->foreign('maGV')->references('maGV')->on('giaoviens');
             $table->foreign('maLop')->references('maLop')->on('lophocs');

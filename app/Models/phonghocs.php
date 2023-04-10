@@ -10,9 +10,6 @@ class phonghocs extends Model
 {
     use HasFactory;
     protected $table = 'phonghocs';
-    protected $fillable = ['namePH', 'maMH', 'maGV', 'maLop', 'tinhtrang'];
-
-
-
+    protected $fillable = ['namePH', 'maMH', 'maGV', 'maLop','maGH','ngayhoc', 'tinhtrang'];
 
 }

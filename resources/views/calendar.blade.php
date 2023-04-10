@@ -1,20 +1,13 @@
-<style>
-th{
-    border: 1px solid black;
 
-}
-td{
-    border: 1px solid black;
-    min-width: 120px;
-    text-align:  center;
-}
-</style>
+<link rel="stylesheet" href="{{asset('customCss/rooms.css')}}">
 <div class="content">
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    Calendar
+                    <h2> 
+                        Thời khóa biểu dạy học
+                    </h2>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered">
@@ -23,20 +16,25 @@ td{
                             @foreach($weekDays as $day)
                                 <th colspan="9">{{ $day }}</th>
                             @endforeach
+                            
                         </thead>
                         <tbody>
                             @foreach($calendarData as $time => $days)
                                 <tr>
-                                    <td>
+                                    <td class="customTime">
                                         {{ $time }}
                                     </td>
+                                    
                                         @foreach($days as $value)
                                             @if (is_array($value))
-                                                <td rowspan="{{$value['rowspan']}}"  class="align-middle text-center" style="background-color:#f0f0f0">
+                                            <td rowspan="{{$value['rowspan']}}"  class="align-middle text-center" style="background-color:#f0f0f0">
+                                                <a href="{{ route('infoRoom', ['id' => $value['id']] ) }}" class="customInfoRoom">
                                                     {{ $value['class_name'] }}<br>
+
                                                     Teacher: {{ $value['teacher_name'] }}
-                                                </td>
-                                            @elseif ($value === 1)
+                                                </a>
+                                            </td>
+                                                @elseif ($value === 1)
                                                 <td></td>
                                             @endif
                                         @endforeach
@@ -49,5 +47,10 @@ td{
         </div>
     </div>
 </div>
+<footer>
+    <a href="/" class="customFooter">
+        Trở lại giao diện
+    </a>
+</footer>
 
 
