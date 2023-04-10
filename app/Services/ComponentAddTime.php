@@ -35,6 +35,7 @@ class ComponentAddTime{
                 $messages = $nTiet;
                 return $messages;
             }
+            
         }else{
             $messages = 'Các tiết học phải liền nhau';
             return $messages;
