@@ -46,7 +46,6 @@ class ComponentAddRoom{
             ->get()
             ->count();
 
-
             // kiem tra giao vien co dang day
             $checkTeacherInRoom = DB::table('phonghocs')
             ->join('giohocs', 'phonghocs.maGH','=','giohocs.maGH')
